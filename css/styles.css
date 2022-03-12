@@ -21,7 +21,7 @@ h3{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 body{
@@ -63,6 +63,21 @@ body{
 .title-img{
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+@media (max-width: 1028px){
+
+  #title{
+    text-align: center;
+  }
+
+  .title-img{
+    position: static;
+    transform: rotate(0);
+  }
+
 }
 
 
@@ -76,6 +91,9 @@ body{
 /* FEATURES */
 #features{
   padding: 8% 16%;
+  background-color: #fff;
+  position: relative;
+  /* z-index: 1; */
 }
 
 .feature-p{
@@ -137,4 +155,38 @@ body{
 
 .pricing-column{
   padding: 4% 3%;
+}
+
+
+/* CTA SECTION */
+
+#cta{
+  text-align: center;
+  background-color: #ff4c68;
+  padding: 8% 16%;
+}
+
+.cta-h3{
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* Footer section */
+
+#footer{
+  padding: 8% 16%;
+  text-align: center;
+}
+
+.footer-icons{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-p{
+  color: grey;
+  font-weight: bold;
 }
